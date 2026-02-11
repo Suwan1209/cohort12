@@ -22,11 +22,12 @@
 ---
 
 ## 폴더 구조
+```
 task명/
 ├─ example/
 └─ submissions/
 └─ README.md
-
+```
 
 ---
 

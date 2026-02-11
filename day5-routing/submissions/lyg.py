@@ -6,8 +6,16 @@ load_dotenv()
 #-------------------------------------
 #모델 설정
 #-------------------------------------
-from langchain_anthropic import ChatAnthropic
-llm = ChatAnthropic(model="claude-sonnet-4-5-20250929")
+# from langchain_anthropic import ChatAnthropic
+# llm = ChatAnthropic(model="claude-sonnet-4-5-20250929")
+
+
+from langchain_openai import ChatOpenAI
+llm = ChatOpenAI(
+    #model="claude-3-5-sonnet-20241022"
+    # model= "openai:gpt-4.1",
+    model="gpt-5-nano",
+)
 
 from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
